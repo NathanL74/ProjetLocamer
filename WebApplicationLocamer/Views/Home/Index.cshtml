@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Locamer</h1>
+    <p class="lead">Gestion des réservations</p>
+    <p></p>
+</div>
+
+<div class="row">
+    <div>
+        <ul>
+            <li>@Html.ActionLink("Liste des clients", "Index", "Clients")</li>
+            <li>@Html.ActionLink("Liste des séjours", "Index", "Sejours")</li>
+            <li>@Html.ActionLink("Type de séjour", "Index", "Type_sejour")</li>
+            <li>@Html.ActionLink("Liste des options", "Index", "Options")</li>
+            <li>@Html.ActionLink("Type de tarif", "Index", "Type_tarif")</li>
+        </ul>
+    </div>
+</div>

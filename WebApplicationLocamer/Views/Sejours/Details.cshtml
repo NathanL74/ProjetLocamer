@@ -1,0 +1,58 @@
+﻿@model WebApplicationLocamer.Models.Sejour
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sejour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_option)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_option)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_debut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_debut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_fin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_fin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client.nom_client)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.nom_client)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_sejour.libelle_Tsejour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_sejour.libelle_Tsejour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_Sejour }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
